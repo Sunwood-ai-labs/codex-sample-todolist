@@ -27,7 +27,12 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: 'https://github.com/Sunwood-ai-labs/codex-sample-todolist/edit/main/docs-site/docs/',
         },
-        blog: false,
+        blog: {
+          path: 'blog',
+          routeBasePath: 'blog',
+          showReadingTime: true,
+          editUrl: 'https://github.com/Sunwood-ai-labs/codex-sample-todolist/edit/main/docs-site/blog/',
+        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -50,6 +55,11 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             docId: 'intro',
             position: 'left',
             label: 'Tutorial',
+          },
+          {
+            to: '/blog',
+            label: 'Blog',
+            position: 'left',
           },
           {
             href: 'https://github.com/facebook/docusaurus',
@@ -87,15 +97,19 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
               },
             ],
           },
-    {
-      title: 'More',
-      items: [
-        {
-          label: 'GitHub',
-          href: 'https://github.com/facebook/docusaurus',
-        },
-      ],
-    },
+          {
+            title: 'More',
+            items: [
+              {
+                label: 'Blog',
+                to: '/blog',
+              },
+              {
+                label: 'GitHub',
+                href: 'https://github.com/facebook/docusaurus',
+              },
+            ],
+          },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
