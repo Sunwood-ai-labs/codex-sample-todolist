@@ -1,6 +1,6 @@
 ---
 id: installation
-title: インストール
+title: "⚙️ インストール"
 ---
 
 ## インストール

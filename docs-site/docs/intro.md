@@ -1,6 +1,6 @@
 ---
 id: intro
-title: はじめに
+title: "📖 はじめに"
 slug: /
 ---
 
