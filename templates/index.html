@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-3">
+  <h1>Tasks</h1>
+  <form class="row g-2" method="get" action="{{ url_for('index') }}">
+    <div class="col-auto">
+      <select class="form-select" name="filter" onchange="this.form.submit()">
+        <option value="all" {% if filter_status=='all' %}selected{% endif %}>All</option>
+        <option value="active" {% if filter_status=='active' %}selected{% endif %}>Active</option>
+        <option value="completed" {% if filter_status=='completed' %}selected{% endif %}>Completed</option>
+      </select>
+    </div>
+    <div class="col-auto">
+      <select class="form-select" name="sort" onchange="this.form.submit()">
+        <option value="due_date" {% if sort_key=='due_date' %}selected{% endif %}>Due Date</option>
+        <option value="created_at" {% if sort_key=='created_at' %}selected{% endif %}>Created</option>
+        <option value="priority" {% if sort_key=='priority' %}selected{% endif %}>Priority</option>
+      </select>
+    </div>
+  </form>
+</div>
+<form method="post" action="{{ url_for('add') }}" class="row g-3 mb-4">
+  <div class="col-md-6">
+    <input type="text" class="form-control" name="title" placeholder="New task" required>
+  </div>
+  <div class="col-auto">
+    <input type="date" class="form-control" name="due_date">
+  </div>
+  <div class="col-auto">
+    <select class="form-select" name="priority">
+      <option value="Low">Low</option>
+      <option value="Medium" selected>Medium</option>
+      <option value="High">High</option>
+    </select>
+  </div>
+  <div class="col-auto">
+    <button type="submit" class="btn btn-primary mb-3">Add</button>
+  </div>
+</form>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Done</th>
+      <th>Title</th>
+      <th>Due Date</th>
+      <th>Priority</th>
+      <th>Created</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for task in tasks %}
+      <tr class="{% if task.complete %}table-success{% endif %}">
+        <td>
+          <form method="post" action="{{ url_for('toggle', task_id=task.id) }}">
+            <button type="submit" class="btn btn-link p-0">
+              {% if task.complete %}✔{% else %}✖{% endif %}
+            </button>
+          </form>
+        </td>
+        <td>{{ task.title }}</td>
+        <td>{{ task.due_date or '-' }}</td>
+        <td>{{ task.priority }}</td>
+        <td>{{ task.created_at }}</td>
+        <td>
+          <a href="{{ url_for('edit', task_id=task.id) }}" class="btn btn-sm btn-outline-secondary">Edit</a>
+          <form method="post" action="{{ url_for('delete', task_id=task.id) }}" style="display:inline-block" onsubmit="return confirm('Delete this task?');">
+            <button type="submit" class="btn btn-sm btn-outline-danger">Delete</button>
+          </form>
+        </td>
+      </tr>
+    {% else %}
+      <tr>
+        <td colspan="6" class="text-center">No tasks found.</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}
