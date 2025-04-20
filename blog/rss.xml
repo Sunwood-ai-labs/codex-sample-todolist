@@ -8,11 +8,11 @@
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <item>
-            <title><![CDATA[✨ docs: regenerate blog posts from git history]]></title>
-            <link>https://Sunwood-ai-labs.github.io/codex-sample-todolist/blog/blog/a35607b/</link>
-            <guid>/blog/a35607b/</guid>
+            <title><![CDATA[🚀 進捗レポート: docs-site 更新]]></title>
+            <link>https://Sunwood-ai-labs.github.io/codex-sample-todolist/blog/blog/progress-report/</link>
+            <guid>/blog/progress-report/</guid>
             <pubDate>Sun, 20 Apr 2025 00:56:43 GMT</pubDate>
-            <description><![CDATA[~diff]]></description>
+            <description><![CDATA[こんにちは、Sunwood-ai-labsのドキュメントチームです😊]]></description>
         </item>
         <item>
             <title><![CDATA[chore(docs-site): remove old blog posts for regeneration from git history]]></title>

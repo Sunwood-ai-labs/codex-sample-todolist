@@ -8,11 +8,11 @@
     <subtitle>codex-sample-todolist ドキュメント Blog</subtitle>
     <icon>https://Sunwood-ai-labs.github.io/codex-sample-todolist/img/favicon.ico</icon>
     <entry>
-        <title type="html"><![CDATA[✨ docs: regenerate blog posts from git history]]></title>
-        <id>/blog/a35607b/</id>
-        <link href="https://Sunwood-ai-labs.github.io/codex-sample-todolist/blog/blog/a35607b/"/>
+        <title type="html"><![CDATA[🚀 進捗レポート: docs-site 更新]]></title>
+        <id>/blog/progress-report/</id>
+        <link href="https://Sunwood-ai-labs.github.io/codex-sample-todolist/blog/blog/progress-report/"/>
         <updated>2025-04-20T00:56:43.000Z</updated>
-        <summary type="html"><![CDATA[~diff]]></summary>
+        <summary type="html"><![CDATA[こんにちは、Sunwood-ai-labsのドキュメントチームです😊]]></summary>
         <author>
             <name>Sunwood-ai-labs</name>
             <uri>https://github.com/Sunwood-ai-labs</uri>
