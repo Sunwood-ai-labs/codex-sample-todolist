@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocs_site=self.webpackChunkdocs_site||[]).push([[90],{2016:e=>{e.exports=JSON.parse('{"permalink":"/codex-sample-todolist/blog/page/2","page":2,"postsPerPage":10,"totalPages":2,"totalCount":11,"previousPage":"/codex-sample-todolist/blog","nextPage":null,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
