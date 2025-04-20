@@ -22,27 +22,28 @@ git rev-list --reverse HEAD | while read -r rev; do
   date=$(git show -s --format=%cI "$rev")
   title=$(git show -s --format=%s "$rev")
   slug=${rev:0:7}
-  # Get diff for commit
-  if git rev-parse "${rev}^" >/dev/null 2>&1; then
-    diff_text=$(git diff "${rev}^" "$rev")
-  else
-    # First commit: show commit contents
-    diff_text=$(git show "$rev")
-  fi
   # Prepare filename
   filename="$BLOG_DIR/${date:0:10}-$slug.md"
-  # Write frontmatter and diff
+  # Write progress report post
   cat > "$filename" << EOF
 ---
-title: "$title"
+title: "🚀 進捗: $title"
 date: $date
 slug: /blog/$slug/
 authors: [sunwood]
 ---
 
-~~~diff
-$diff_text
-~~~
+こんにちは、Sunwood-ai-labsです😊
+
+## 🔖 コミットメッセージ
+- $title
+
+## 🗂️ 変更概要
+- 「$title」に基づく変更を適用しました。
+
+## 🚀 次のステップ
+- 継続的に改善を進めます。
+
 EOF
 done
 
