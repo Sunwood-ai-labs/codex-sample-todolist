@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocs_site=self.webpackChunkdocs_site||[]).push([[630],{9459:o=>{o.exports=JSON.parse('{"allTagsPath":"/codex-sample-todolist/blog/tags","slug":"/codex-sample-todolist/blog/tags/facebook","name":"facebook","count":1,"permalink":"/codex-sample-todolist/blog/tags/facebook"}')}}]);

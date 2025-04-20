@@ -4,36 +4,68 @@
         <title>codex-sample-todolist ドキュメント Blog</title>
         <link>https://Sunwood-ai-labs.github.io/codex-sample-todolist/blog</link>
         <description>codex-sample-todolist ドキュメント Blog</description>
-        <lastBuildDate>Thu, 26 Aug 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 20 Apr 2025 00:55:22 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <item>
-            <title><![CDATA[Welcome]]></title>
-            <link>https://Sunwood-ai-labs.github.io/codex-sample-todolist/blog/welcome</link>
-            <guid>welcome</guid>
-            <pubDate>Thu, 26 Aug 2021 00:00:00 GMT</pubDate>
-            <description><![CDATA[Docusaurus blogging features are powered by the blog plugin.]]></description>
+            <title><![CDATA[chore(docs-site): remove old blog posts for regeneration from git history]]></title>
+            <link>https://Sunwood-ai-labs.github.io/codex-sample-todolist/blog/blog/b819e5b/</link>
+            <guid>/blog/b819e5b/</guid>
+            <pubDate>Sun, 20 Apr 2025 00:55:22 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[MDX Blog Post]]></title>
-            <link>https://Sunwood-ai-labs.github.io/codex-sample-todolist/blog/mdx-blog-post</link>
-            <guid>mdx-blog-post</guid>
-            <pubDate>Sun, 01 Aug 2021 00:00:00 GMT</pubDate>
-            <description><![CDATA[Blog posts support Docusaurus Markdown features, such as MDX.]]></description>
+            <title><![CDATA[chore(docs-site): remove pages plugin to avoid route conflicts and use docs plugin homepage]]></title>
+            <link>https://Sunwood-ai-labs.github.io/codex-sample-todolist/blog/blog/8962e4a/</link>
+            <guid>/blog/8962e4a/</guid>
+            <pubDate>Sat, 19 Apr 2025 18:42:27 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[Long Blog Post]]></title>
-            <link>https://Sunwood-ai-labs.github.io/codex-sample-todolist/blog/long-blog-post</link>
-            <guid>long-blog-post</guid>
-            <pubDate>Wed, 29 May 2019 00:00:00 GMT</pubDate>
-            <description><![CDATA[This is the summary of a very long blog post,]]></description>
+            <title><![CDATA[✨ docs: re-enable blog and homepage in docs-site]]></title>
+            <link>https://Sunwood-ai-labs.github.io/codex-sample-todolist/blog/blog/3260281/</link>
+            <guid>/blog/3260281/</guid>
+            <pubDate>Sat, 19 Apr 2025 18:37:31 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[First Blog Post]]></title>
-            <link>https://Sunwood-ai-labs.github.io/codex-sample-todolist/blog/first-blog-post</link>
-            <guid>first-blog-post</guid>
-            <pubDate>Tue, 28 May 2019 00:00:00 GMT</pubDate>
-            <description><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet]]></description>
+            <title><![CDATA[✨ docs: add emojis to chapter titles]]></title>
+            <link>https://Sunwood-ai-labs.github.io/codex-sample-todolist/blog/blog/03ae5b6/</link>
+            <guid>/blog/03ae5b6/</guid>
+            <pubDate>Sat, 19 Apr 2025 18:34:15 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[✨ docs: set intro doc as homepage via slug]]></title>
+            <link>https://Sunwood-ai-labs.github.io/codex-sample-todolist/blog/blog/ad9e61c/</link>
+            <guid>/blog/ad9e61c/</guid>
+            <pubDate>Sat, 19 Apr 2025 18:29:18 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[✨ docs: remove blog and homepage from docs-site]]></title>
+            <link>https://Sunwood-ai-labs.github.io/codex-sample-todolist/blog/blog/87c0553/</link>
+            <guid>/blog/87c0553/</guid>
+            <pubDate>Sat, 19 Apr 2025 18:21:29 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[chore: add docusaurus japanese docs and deploy]]></title>
+            <link>https://Sunwood-ai-labs.github.io/codex-sample-todolist/blog/blog/19a99cf/</link>
+            <guid>/blog/19a99cf/</guid>
+            <pubDate>Sat, 19 Apr 2025 18:11:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[🔀 Merge: TODOリストアプリ機能追加とDocker Compose対応]]></title>
+            <link>https://Sunwood-ai-labs.github.io/codex-sample-todolist/blog/blog/0f048bb/</link>
+            <guid>/blog/0f048bb/</guid>
+            <pubDate>Sat, 19 Apr 2025 06:25:45 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[✨ TODOリストアプリ機能追加とDocker Compose対応]]></title>
+            <link>https://Sunwood-ai-labs.github.io/codex-sample-todolist/blog/blog/11483d3/</link>
+            <guid>/blog/11483d3/</guid>
+            <pubDate>Sat, 19 Apr 2025 06:25:32 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Initial commit]]></title>
+            <link>https://Sunwood-ai-labs.github.io/codex-sample-todolist/blog/blog/027609d/</link>
+            <guid>/blog/027609d/</guid>
+            <pubDate>Sat, 19 Apr 2025 05:58:13 GMT</pubDate>
         </item>
     </channel>
 </rss>

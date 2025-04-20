@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocs_site=self.webpackChunkdocs_site||[]).push([[819],{1344:s=>{s.exports=JSON.parse('{"allTagsPath":"/codex-sample-todolist/blog/tags","slug":"/codex-sample-todolist/blog/tags/docusaurus","name":"docusaurus","count":4,"permalink":"/codex-sample-todolist/blog/tags/docusaurus"}')}}]);
