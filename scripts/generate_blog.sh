@@ -21,11 +21,17 @@ git rev-list --reverse HEAD | while read -r rev; do
   # Extract metadata
   date=$(git show -s --format=%cI "$rev")
   title=$(git show -s --format=%s "$rev")
-  body=$(git show -s --format=%b "$rev")
   slug=${rev:0:7}
+  # Get diff for commit
+  if git rev-parse "${rev}^" >/dev/null 2>&1; then
+    diff_text=$(git diff "${rev}^" "$rev")
+  else
+    # First commit: show commit contents
+    diff_text=$(git show "$rev")
+  fi
   # Prepare filename
   filename="$BLOG_DIR/${date:0:10}-$slug.md"
-  # Write frontmatter
+  # Write frontmatter and diff
   cat > "$filename" << EOF
 ---
 title: "$title"
@@ -34,7 +40,9 @@ slug: /blog/$slug/
 authors: [sunwood]
 ---
 
-$body
+~~~diff
+$diff_text
+~~~
 EOF
 done
 
